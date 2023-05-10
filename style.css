@@ -1,16 +1,16 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: salmon;
-    font-family: 'Courier New', Courier, monospace;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;        
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: salmon;
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* img{
@@ -36,65 +36,62 @@ body{
     
 } */
 
-.clock{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
+.clock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
     "tw tw tw"
-    "nn needle th" 
+    "nn needle th"
     "si si si";
-    background-color: lightgray;
-    padding:1rem;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 100%;
-    border: .3rem solid darkgrey  ;
-    box-shadow: 1rem 1rem 2rem rgba(0,0,0,.5);
-    z-index: 1;
+  background-color: lightgray;
+  padding: 1rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  border: 0.3rem solid darkgrey;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
-
-.twelve{
-    grid-area:tw ;    
-    justify-self: center;
-     
+.twelve {
+  grid-area: tw;
+  justify-self: center;
 }
 
-.three{
-    grid-area:th ;
-    align-self:center;
-    justify-self: end;
+.three {
+  grid-area: th;
+  align-self: center;
+  justify-self: end;
 }
 
-.nine{
-    grid-area:nn ;
-    align-self:center;
+.nine {
+  grid-area: nn;
+  align-self: center;
 }
 
-.six{
-    grid-area:si;
-    justify-self: center;    
-    align-self:self-end;
+.six {
+  grid-area: si;
+  justify-self: center;
+  align-self: self-end;
 }
 
-img{
-    width: 70px;    
-    grid-area:tw;
-    align-self:self-end;
-    justify-self: center;
-    padding-bottom: 1rem;
-    z-index: 2;
+img {
+  width: 70px;
+  grid-area: tw;
+  align-self: self-end;
+  justify-self: center;
+  padding-bottom: 1rem;
+  z-index: 2;
 }
 
-.arrows::before{     
-    content: "";
-    width: 2rem;
-    height: 2rem;    
-    background-color: brown;
-    z-index: 4;
+.arrows::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-color: brown;
+  z-index: 4;
 }
 
-.arrows{    
-    
+.arrows {
 }
